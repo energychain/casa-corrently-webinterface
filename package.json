@@ -1,0 +1,24 @@
+{
+  "name": "casa-corrently-webinterface",
+  "version": "1.0.0",
+  "description": "Static Webinterface for Casa Corrently Cloud based Energy Management",
+  "main": "boot.js",
+  "scripts": {
+    "start": "node ./standalone.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/energychain/casa-corrently-webinterface.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/energychain/casa-corrently-webinterface/issues"
+  },
+  "homepage": "https://github.com/energychain/casa-corrently-webinterface#readme",
+  "dependencies": {
+    "casa-corrently": "^1.0.8",
+    "express": "^4.17.1"
+  }
+}
