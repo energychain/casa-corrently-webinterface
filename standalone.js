@@ -29,7 +29,7 @@ const boot = async function() {
   if(typeof config.autoupdate !== 'undefined') {
     doupdates = config.autoupdate;
   }
-  config.staticFiles = './node_modules/casa-corrently/public';
+  config.staticFiles = './';
   const main = await CasaCorrently();
   await main.server(config);
 };
