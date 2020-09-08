@@ -16,9 +16,12 @@
   "bugs": {
     "url": "https://github.com/energychain/casa-corrently-webinterface/issues"
   },
-  "homepage": "https://github.com/energychain/casa-corrently-webinterface#readme",
+  "homepage": "https://www.stromdao.de/casa",
   "dependencies": {
     "casa-corrently": "^1.0.8",
     "express": "^4.17.1"
+  },
+  devDependencies": {
+      "mocha": "^8.1.3"
   }
 }
