@@ -20,7 +20,7 @@
   "dependencies": {
     "casa-corrently": "^1.0.11",
     "express": "^4.17.1",
-    "casa-corrently-ipfs-edge": "^1.0.2"
+    "casa-corrently-ipfs-edge": "^1.0.4"
   },
   "devDependencies": {
     "mocha": "^8.1.3"
