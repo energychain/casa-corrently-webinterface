@@ -620,6 +620,10 @@
   background-color: white;
 }
 
+.dropdown-item:active {
+  background-color: #FFA700;
+}
+
 .blog-slider {
   width: 95%;
   position: relative;
