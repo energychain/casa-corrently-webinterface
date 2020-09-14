@@ -16,9 +16,9 @@ const boot = async function() {
   if((process.argv.length == 3)&&(await fileExists(process.argv[2]))) {
     config = JSON.parse(fs.readFileSync(process.argv[2]));
   } else
-  if((process.argv.length == 3)&&(await fileExists('/configs/'+process.argv[2]))) {
+  if((process.argv.length == 3)&&(await fileExists('/casa-corrently-docker'))) {
     // for use with docker image mount point of volume at /configs
-    config = JSON.parse(fs.readFileSync('/configs/'+process.argv[2]));
+    config = JSON.parse(fs.readFileSync('/casa-corrently-docker'));
   } else
   if(await fileExists("./config.json")) {
     config = JSON.parse(fs.readFileSync("./config.json"));
