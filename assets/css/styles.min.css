@@ -463,7 +463,7 @@
   border: none;
   padding: 0;
   margin: 0;
-  background-image: url(img/jsoneditor-icons.svg);
+  background-image: url(/assets/img/jsoneditor-icons.svg);
 }
 
 .jsoneditor-contextmenu .jsoneditor-text {
