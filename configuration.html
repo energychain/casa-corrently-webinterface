@@ -20,14 +20,14 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/Corrently%20192x192.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/Corrently%20192x192.png">
     <link rel="icon" type="image/png" sizes="512x128" href="assets/img/Corrently%20512x128.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
@@ -77,7 +77,7 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
                     <li class="nav-item"><a class="nav-link secondNavLink" href="https://tawk.to/chat/5c53189451410568a109843f/default"><i class="fa fa-wechat"></i></a></li>
                     <li class="nav-item"><a class="nav-link secondNavLink" href="online_help.html"><i class="fa fa-question-circle-o"></i></a></li>
                     <li class="nav-item" id="p2pselection" style="display:none">
-                        <div class="nav-item dropdown" style="margin-top:10px;color:#ffffff"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color:#ffffff">&nbsp;<i class="fa fa-th-list"></i><span id="lblPeername" style="margin-left:3px;"></span></a>
+                        <div class="nav-item dropdown" style="margin-top:10px;color:#ffffff"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color:#ffffff">&nbsp;<i class="fa fa-th-list"></i></a>
                             <div class="dropdown-menu" id="cids"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
                         </div>
                     </li>
@@ -87,33 +87,7 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
     </nav>
     <div class="container" id="app" style="background-color: #ffffff;margin-top: 25px;margin-bottom: 25px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.18);min-height: 600px;padding-top: 20px;padding-bottom: 20px;">
         <h1 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Einstellungen</strong><br></h1>
-        <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Discovergy Zugangsdaten</strong><br></h3>
-        <form id="configFrm" action="/config" method="post">
-            <div class="form-group"><label>Discovergy MeterId (Netzanschluß)</label><input class="form-control" type="text" id="meterId" name="meterId"></div>
-            <div class="form-group"><label>Discovergy Portal Benutzernamen</label><input class="form-control" type="text" id="username" name="username"></div>
-            <div class="form-group"><label>Discovergy Portal Passwort</label><input class="form-control" type="password" id="password" name="password"></div>
-            <hr>
-            <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Stammdaten des Zählers</strong><br></h3>
-            <div class="form-group"><label>Anfangszählerstand Bezug (in Wattstunden)</label><input class="form-control" type="text" id="firstReading" inputmode="numeric" name="firstReading"></div>
-            <div class="form-group"><label>Anfangszählerstand Einspeisung (in Wattstunden)</label><input class="form-control" type="text" id="firstReadingOut" inputmode="numeric" name="firstReadingOut"></div>
-            <div class="form-group"><label>Datum der ersten Ablesung</label><input class="form-control" id="firstReadingDate" type="date" name="firstReadingDate"></div>
-            <div class="form-group"><label>Einspeisevergütung in Euro</label><input class="form-control" type="text" id="revenue" inputmode="numeric" name="revenue"></div>
-            <div class="form-group"><label>Jährliche Kosten (inkl. Abschreibung)</label><input class="form-control" type="text" id="amortization" inputmode="numeric" name="amortization"></div>
-            <div class="form-group"><label>Discovergy MeterId (Produktionszähler)</label><input class="form-control" type="text" id="prodMeterId" name="prodMeterId"></div>
-            <div class="form-group"><label>Anfangszählerstand Produktion (in Wattstunden)</label><input class="form-control" type="text" id="firstReadingProd" inputmode="numeric" name="firstReadingProd"></div>
-            <div class="form-group">
-                <div class="form-check"><input class="form-check-input" type="checkbox" id="isProduction" name="isProduction"><label class="form-check-label" for="formCheck-1">Messkonzept 1 (Volleinspeisung)</label></div>
-            </div>
-            <hr>
-            <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Corrently Daten</strong><br></h3>
-            <div class="form-group"><label>Zugehörige Gemeinschaft</label><input class="form-control" type="text" id="community" inputmode="numeric" name="community"></div>
-            <div class="form-group"><label>Corrently Stromkonto</label><input class="form-control" type="text" id="stromkonto" inputmode="numeric" name="stromkonto"></div>
-            <div class="form-group"><label>Corrently Depotkonto</label><input class="form-control" type="text" id="depot" inputmode="numeric" name="depot"></div>
-            <div class="btn-toolbar d-xl-flex justify-content-xl-center">
-                <div class="btn-group" role="group"><button class="btn btn-primary" type="reset">Abbrechen</button><button class="btn btn-primary" type="submit"><strong>Speichern</strong></button></div>
-            </div>
-        </form>
-    </div>
+        <div id="jsoneditor"></div><img src="assets/img/jsoneditor-icons.svg" style="display:none"></div>
     <div class="footer-basic">
         <footer>
             <div class="social"><a class="border rounded-circle" data-bs-hover-animate="pulse" href="https://www.instagram.com/corrently.energy/"><i class="icon ion-social-instagram"></i></a><a data-bs-hover-animate="pulse" href="https://www.facebook.com/stromdaoltd/"><i class="icon ion-social-facebook"></i></a>
@@ -132,13 +106,14 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
             <p class="copyright"><strong>STROM</strong>DAO&nbsp;GmbH © 2020</p>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="https://elements.corrently.io/dist/correntlyElements-min.js"></script>
     <script src="assets/js/script.min.js"></script>
     <script src="assets/js/config.min.js"></script>
+    <script src="assets/js/jsoneditor.min.min.js"></script>
 </body>
 
 </html>
