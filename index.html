@@ -18,8 +18,8 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
     <link rel="icon" type="image/png" sizes="31x32" href="assets/img/Corrently%2031x32.png">
     <link rel="icon" type="image/png" sizes="31x32" href="assets/img/Corrently%2031x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/Corrently%20192x192.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/Corrently%20192x192.png">
-    <link rel="icon" type="image/png" sizes="512x128" href="assets/img/Corrently%20512x128.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/casa_corrently_logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/casa_corrently_logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
@@ -141,6 +141,28 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
         <div class="row" style="margin-top:40px;">
             <div class="col">
                 <h6 class="text-center text-black-50" style="margin-top: 25px;font-family: 'DIN Alternate Bold';"><strong>Stand:&nbsp;</strong><span class="updateTS">(lade)</span>&nbsp;- Nur zur Information, Keine Abrechnung.</h6>
+            </div>
+        </div>
+    </div>
+    <div class="modal" role="dialog" tabindex="-1" id="modalEinnahmen">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="color: #FFFFFF;background: rgb(12,109,52);">
+                    <h4 class="modal-title">Einnahmen</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p><canvas id='einnahmenChartB' width="600" height="400"></canvas></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" role="dialog" tabindex="-1" id="modalAusgaben">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="color: #FFFFFF;background: rgb(253,168,37);">
+                    <h4 class="modal-title">Ausgaben</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p><canvas id='ausgabenChartB' width="600" height="400"></canvas></p>
+                </div>
             </div>
         </div>
     </div>
