@@ -18,8 +18,8 @@
   },
   "homepage": "https://www.stromdao.de/casa",
   "dependencies": {
-    "casa-corrently": "^1.0.21",
-    "casa-corrently-ipfs-edge": "^1.0.43",
+    "casa-corrently": "^1.0.23",
+    "casa-corrently-ipfs-edge": "^1.0.44",
     "cids": "^1.0.0",
     "express": "^4.17.1"
   },
