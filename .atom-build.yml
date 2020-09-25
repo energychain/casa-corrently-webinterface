@@ -1,5 +1,7 @@
 cmd: git add -A ; git commit -m "Auto Commit" -a ; git push origin master ;
 targets:
+  local-run:
+      cmd: "npm start"
   docker-build:
     cmd: "docker build -t stromdao/casa-corrently ."
   docker-run:
