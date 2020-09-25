@@ -17,5 +17,6 @@
    "depot":"0x7866f187f30cd52Bdbd5c4184fD3ee6168Ae0dB4",
    "community":"demo",
    "autoupdate":"false",
-   "publisher":"../casa-corrently-ipfs-edge"
+   "publisher":"../casa-corrently-ipfs-edge",
+   "uuid":"0x7866f187f30cd52Bdbd5c4184fD3ee6168Ae0dB5"
 }
