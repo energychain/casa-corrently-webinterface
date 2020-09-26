@@ -1,5 +1,7 @@
 cmd: git add -A ; git commit -m "Auto Commit" -a ; git push origin master ;
 targets:
+  local-run:
+      cmd: "npm start"
   docker-build:
     cmd: "docker build -t stromdao/casa-corrently ."
   docker-run:
@@ -10,3 +12,5 @@ targets:
     cmd: "docker service create --name casa-corrently -p 3000:3000 --config casa-corrently-docker stromdao/casa-corrently"
   docker-rm-service:
     cmd: "docker service rm casa-corrently"
+  demo-deploy-docker:
+    cmd: "docker build -t stromdao/casa-corrently .; docker push stromdao/casa-corrently"

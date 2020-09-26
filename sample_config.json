@@ -18,5 +18,6 @@
    "community":"demo",
    "autoupdate":"false",
    "publisher":"../casa-corrently-ipfs-edge",
+   "bridge":"casa-corrently-ipfs-bridge",
    "uuid":"0x7866f187f30cd52Bdbd5c4184fD3ee6168Ae0dB5"
 }
