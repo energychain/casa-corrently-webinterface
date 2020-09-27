@@ -7,6 +7,9 @@
     "start": "node ./standalone.js",
     "test": "mocha"
   },
+  "bin": {
+    "casa-corrently-webinterface": "./standalone.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/energychain/casa-corrently-webinterface.git"
@@ -18,8 +21,8 @@
   },
   "homepage": "https://www.stromdao.de/casa",
   "dependencies": {
-    "casa-corrently": "^1.0.30",
-    "casa-corrently-ipfs-edge": "^1.0.50",
+    "casa-corrently": "^1.0.36",
+    "casa-corrently-ipfs-edge": "file:../casa-corrently-ipfs-edge",
     "cids": "^1.0.0",
     "express": "^4.17.1"
   },
