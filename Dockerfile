@@ -8,4 +8,7 @@ RUN npm install
 RUN npm install --save casa-corrently-ipfs-edge
 COPY --chown=node:node . .
 EXPOSE 3000
-CMD [ "npm", "start","/casa-corrently-docker" ]
+RUN npm install pm2 -g
+ENV PM2_PUBLIC_KEY 98ds7yd6auypqpk
+ENV PM2_SECRET_KEY qwmvnfkkoy07vhg
+CMD ["pm2-runtime", "./standalone.js","/casa-corrently-docker"]
