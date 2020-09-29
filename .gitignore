@@ -1,4 +1,4 @@
-*.sh
+export*.sh
 error.log
 
 # Logs
