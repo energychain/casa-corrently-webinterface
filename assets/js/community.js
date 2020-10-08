@@ -231,7 +231,7 @@ $(document).ready(function() {
    }
    const update = function() {
     $.getJSON("./p2p",function(data) {
-      render(msg);
+      render(data);
     });
    }
 
