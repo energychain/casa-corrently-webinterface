@@ -105,7 +105,8 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
                 <tbody id="ctable"></tbody>
             </table>
         </div>
-        <p class="text-center text-muted">(Der Strompreis beinhaltet alle Kosten und Einnahmen in Relation zum Stromverbrauch)</p><canvas id='communityChart' width="100%" height="100%"></canvas>
+        <div class="text-center" style="padding-top: 10px;padding-bottom: 10px;"><button class="btn btn-primary btn-lg" id="btnRadar" type="button"><i class="fa fa-line-chart"></i>&nbsp;Diagramm</button></div>
+        <p class="text-center text-muted">(Der Strompreis beinhaltet alle Kosten und Einnahmen in Relation zum Stromverbrauch)</p>
         <div class="row" style="margin-top:40px;">
             <div class="col">
                 <h3 style="font-family: 'DIN Alternate Bold';">Community Verteilung<br></h3>
@@ -124,6 +125,15 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
 </div></div>
                 </div>
                 <div class="blog-slider__pagination"></div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="radar">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Strompreisvergleich</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body"><canvas id='communityChart' width="100%" height="100%"></canvas></div>
+                </div>
             </div>
         </div>
         <div class="row" style="margin-top:40px;">
