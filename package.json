@@ -25,7 +25,7 @@
   "homepage": "https://www.stromdao.de/casa",
   "dependencies": {
     "casa-corrently": "^1.0.46",
-    "casa-corrently-ipfs-edge": "file:../casa-corrently-ipfs-edge",
+    "casa-corrently-ipfs-edge": "^1.1.22",
     "cids": "^1.0.0",
     "express": "^4.17.1"
   },
