@@ -104,7 +104,7 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
                     <div class="card-header bg-white">
                         <h3 style="font-family: 'DIN Alternate Bold';">Strompreis<br></h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="cbStrompreis">
                         <h4 class="text-center display-3" style="font-family: 'DIN Alternate Bold';"><i class="material-icons" id="priceUp" style="display:none">arrow_drop_up</i><i class="material-icons" id="priceDown" style="display:none">arrow_drop_down</i><span id="energyPrice_kwh">-</span><span class="attributierung" style="min-width: 70px;"><span style="font-size: 22px;min-width: 70px;">¢/kWh</span></span>
                         </h4>
                     </div>
@@ -171,12 +171,6 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
         </div>
     </div>
     <div></div>
-    <div><a class="btn btn-secondary btn-lg" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button"><i class="fa fa-line-chart" style="margin-right: 10px;"></i>Trend/Verlauf Strompreis<i class="fa fa-caret-down" style="margin-left: 10px;"></i></a>
-        <div
-            class="collapse" id="collapse-2"><canvas id='trendChart' width="600" height="400"></canvas>
-            <p></p>
-    </div>
-    </div>
     <div class="row" style="margin-top:40px;">
         <div class="col">
             <h6 class="text-center text-black-50" style="margin-top: 25px;font-family: 'DIN Alternate Bold';"><strong>Stand:&nbsp;</strong><span class="updateTS">(lade)</span>&nbsp;- Nur zur Information, Keine Abrechnung.</h6>
@@ -201,6 +195,17 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
                     <h4 class="modal-title">Ausgaben</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
                     <p><canvas id='ausgabenChartB' width="600" height="400"></canvas></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" role="dialog" tabindex="-1" id="modalStrompreis">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="color: #FFFFFF;background: rgb(253,168,37);">
+                    <h4 class="modal-title">Strompreis Trend&nbsp;</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body"><canvas id='trendChart' width="700" height="400"></canvas>
+                    <p class="text-center text-muted">(Nur mit aktivierter P2P Community verfügbar)</p>
                 </div>
             </div>
         </div>
