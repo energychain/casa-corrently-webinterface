@@ -114,3 +114,4 @@ config.json
 package.json.old
 orbitdb/*
 www/*
+history/*
