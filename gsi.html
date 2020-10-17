@@ -93,6 +93,7 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
             </div>
         </div>
         <div id="nsiChart" noco2standard="true" noinfo="true"></div>
+        <div class="text-center"><button class="btn btn-primary btn-lg" id="btnSchedule" type="button"><i class="fa fa-clock-o"></i>&nbsp;Schaltempfehlungen</button></div>
         <div class="row" style="margin-top:40px">
             <div class="col">
                 <h2 style="font-family: 'DIN Alternate Bold';"><span id="fortext"></span>des Ortes</h2>
@@ -231,6 +232,18 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
             </ul>
             <p class="copyright"><strong>STROM</strong>DAO&nbsp;GmbH © 2020</p>
         </footer>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="schedule">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="color: #FFFFFF;background: rgb(12,109,52);">
+                    <h4 class="modal-title">Schaltempfehlung</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div id="matrix"></div>
+                    <p>The content of your modal.</p>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
