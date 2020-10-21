@@ -64,30 +64,17 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
                 </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" id="kontakt" href="https://www.stromdao.de/kontakt" style="font-family: 'DIN Alternate Bold';background-color: rgb(253,168,37);">Kontakt</a></span></div>
         </div>
     </nav>
-    <nav class="navbar navbar-light navbar-expand text-center" style="height: 40px;background-color: #29834b;z-index:1;">
-        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse d-print-none justify-content-md-center justify-content-lg-center justify-content-xl-center"
-                id="navcol-2">
-                <ul class="nav navbar-nav text-center text-sm-center text-md-center text-lg-center text-xl-center">
-                    <li class="nav-item" title="Strompreis und Stromkosten"><a class="nav-link active secondNavLink" href="./index.html"><i class="fa fa-home"></i></a></li>
-                    <li class="nav-item"><a class="nav-link active secondNavLink" href="./stromkosten.html"><i class="fa fa-balance-scale" title="Übersicht der Stromkosten"></i></a></li>
-                    <li class="nav-item" title="Communityvergleich"><a class="nav-link secondNavLink" href="./community.html" title="Communityvergleich"><i class="fa fa-group"></i></a></li>
-                    <li class="nav-item" title="GrünstromIndex"><a class="nav-link secondNavLink" href="./gsi.html"><i class="fa fa-flash"></i></a></li>
-                    <li class="nav-item" title="Onlinehilfe (Chat)"></li>
-                    <li class="nav-item"><a class="nav-link secondNavLink" href="https://tawk.to/chat/5c53189451410568a109843f/default"><i class="fa fa-wechat"></i></a></li>
-                    <li class="nav-item" title="Dokumentation"><a class="nav-link secondNavLink" href="https://casa.corrently.de/books/anwenderhandbuch-webinterface" target="_blank"><i class="fa fa-question-circle-o"></i></a></li>
-                    <li class="nav-item" id="p2pselection" style="display:none">
-                        <div class="nav-item dropdown" style="margin-top:10px;color:#ffffff"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color:#ffffff">&nbsp;<i class="fa fa-th-list"></i></a>
-                            <div class="dropdown-menu" id="cids"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <div class="container" id="app" style="background-color: #ffffff;margin-top: 25px;margin-bottom: 25px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.18);min-height: 600px;padding-top: 20px;padding-bottom: 20px;">
-        <h1 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Einstellungen</strong><br></h1>
-        <div id="jsoneditor"></div><img src="assets/img/jsoneditor-icons.svg" style="display:none"></div>
+        <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Instanz Konfiguration laden</strong><br></h3>
+        <form id="configFrm" action="/config" method="get">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">URL</span></div><input class="form-control" type="text" placeholder="(http://mein-casa.corrently.de/....)">
+                    <div class="input-group-append"><button class="btn btn-primary" type="submit">Laden!</button></div>
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="footer-basic">
         <footer>
             <div class="social"><a class="border rounded-circle" data-bs-hover-animate="pulse" href="https://www.instagram.com/corrently.energy/"><i class="icon ion-social-instagram"></i></a><a data-bs-hover-animate="pulse" href="https://www.facebook.com/stromdaoltd/"><i class="icon ion-social-facebook"></i></a>
