@@ -69,11 +69,11 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
         <form id="configFrm" action="/config" method="get">
             <div class="form-group">
                 <div class="input-group">
-                    <div class="input-group-prepend"><span class="input-group-text">URL</span></div><input class="form-control" type="text" placeholder="(http://mein-casa.corrently.de/....)" name="curl">
+                    <div class="input-group-prepend"><span class="input-group-text">URL</span></div><input class="form-control" type="text" id="fldcurl" placeholder="(http://mein-casa.corrently.de/....)" name="curl">
                     <div class="input-group-append"><button class="btn btn-primary" id="sbtn" type="submit">Laden!</button></div>
                 </div>
             </div>
-        </form>
+        </form><button class="btn btn-primary" id="btnDemo" type="button">Demo verwenden</button>
         <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Vorhandene Konfigurationen</strong><br></h3>
         <ul id="lgl"></ul>
     </div>
