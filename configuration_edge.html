@@ -65,16 +65,7 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
         </div>
     </nav>
     <div class="container" id="app" style="background-color: #ffffff;margin-top: 25px;margin-bottom: 25px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.18);min-height: 600px;padding-top: 20px;padding-bottom: 20px;">
-        <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Instanz Konfiguration laden</strong><br></h3>
-        <form id="configFrm" action="/config" method="get">
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-prepend"><span class="input-group-text">URL</span></div><input class="form-control" type="text" id="fldcurl" placeholder="(http://mein-casa.corrently.de/....)" name="curl">
-                    <div class="input-group-append"><button class="btn btn-primary" id="sbtn" type="submit">Laden!</button></div>
-                </div>
-            </div>
-        </form><button class="btn btn-primary" id="btnDemo" type="button">Demo verwenden</button><button class="btn btn-primary" id="btnDataEdge" type="button" title="benötigt konfiguriertes Data Edge">Edge Zähler verwenden</button>
-        <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Vorhandene Konfigurationen</strong><br></h3>
+        <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Vorhandene Edge Zähler</strong><br></h3>
         <ul id="lgl"></ul>
     </div>
     <div class="footer-basic">
@@ -102,6 +93,7 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
     <script src="https://elements.corrently.io/dist/correntlyElements-min.js"></script>
     <script src="assets/js/script.min.js"></script>
     <script src="assets/js/render.min.js"></script>
+    <script src="assets/js/edge.min.js"></script>
 </body>
 
 </html>
