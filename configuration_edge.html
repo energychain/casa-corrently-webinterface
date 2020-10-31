@@ -64,10 +64,18 @@ nur Corrently kann Dir sagen, wann wie viel grüner Strom in Deiner Region erzeu
                 </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" id="kontakt" href="https://www.stromdao.de/kontakt" style="font-family: 'DIN Alternate Bold';background-color: rgb(253,168,37);">Kontakt</a></span></div>
         </div>
     </nav>
-    <div class="container" id="app" style="background-color: #ffffff;margin-top: 25px;margin-bottom: 25px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.18);min-height: 600px;padding-top: 20px;padding-bottom: 20px;">
-        <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Vorhandene Edge Zähler</strong><br></h3>
-        <div id="lgl"></div>
-    </div>
+    <form>
+        <div class="container" id="app" style="background-color: #ffffff;margin-top: 25px;margin-bottom: 25px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.18);min-height: 600px;padding-top: 20px;padding-bottom: 20px;">
+            <h3 style="margin-top: 25px;font-family: 'DIN Alternate Bold';margin-bottom: 25px;"><strong>Vorhandene Edge Zähler</strong><br></h3>
+            <div id="lgl"></div>
+            <hr>
+            <div class="form-group">
+                <h4 style="margin-top: 25px;">Stammdaten</h4><label for="name">Bezeichnung der Konfiguration</label><input class="form-control" type="text" id="name" name="name" placeholder="(Name)"><label for="zip">Postleitzahl (Deutschland)</label><input class="form-control" type="text"
+                    id="zip" name="zip" placeholder="(12345)"><label for="stromkonto">Stromkonto</label><input class="form-control" type="text" id="stromkonto" name="stromkonto" placeholder="(0x123456...)">
+                <h4 style="margin-top: 25px;">Fiskaldaten</h4><label for="name">Jährliche Abschreibung (in Euro)</label><input class="form-control" type="text" id="amortization" name="amortization" placeholder="(1573,20)"><label for="name">Einspeisevergütung (in Euro je Kilo-Watt-Stunde)</label>
+                <input
+                    class="form-control" type="text" id="revenue" name="revenue" placeholder="(0,12345)"></div><button class="btn btn-primary" id="btnSaveConfig" type="button" title="benötigt konfiguriertes Data Edge">Konfiguration speichern</button></div>
+    </form>
     <div class="footer-basic">
         <footer>
             <div class="social"><a class="border rounded-circle" data-bs-hover-animate="pulse" href="https://www.instagram.com/corrently.energy/"><i class="icon ion-social-instagram"></i></a><a data-bs-hover-animate="pulse" href="https://www.facebook.com/stromdaoltd/"><i class="icon ion-social-facebook"></i></a>
